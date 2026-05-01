@@ -25,7 +25,7 @@ const Reveal = ({
   children,
   className,
   delay = 0,
-  duration = 700,
+  duration = 1800,
   direction = "up",
   once = true,
   threshold = 0.2,

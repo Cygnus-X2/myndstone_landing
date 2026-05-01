@@ -150,9 +150,9 @@ All colors MUST be HSL.
 
   .reveal {
     opacity: 0;
-    transform: translate3d(0, 28px, 0);
+    transform: translate3d(0, 14px, 0);
     transition-property: opacity, transform;
-    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    transition-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
     will-change: opacity, transform;
   }
 
@@ -162,27 +162,27 @@ All colors MUST be HSL.
   }
 
   .reveal-left {
-    transform: translate3d(-28px, 0, 0);
+    transform: translate3d(-14px, 0, 0);
   }
 
   .reveal-right {
-    transform: translate3d(28px, 0, 0);
+    transform: translate3d(14px, 0, 0);
   }
 
   .reveal-down {
-    transform: translate3d(0, -28px, 0);
+    transform: translate3d(0, -14px, 0);
   }
 
   .reveal-up {
-    transform: translate3d(0, 28px, 0);
+    transform: translate3d(0, 14px, 0);
   }
 
   .float-gentle {
-    animation: float-gentle 6s ease-in-out infinite;
+    animation: float-gentle 16s ease-in-out infinite;
   }
 
   .pulse-soft {
-    animation: pulse-soft 3.8s ease-in-out infinite;
+    animation: pulse-soft 12s ease-in-out infinite;
   }
 
   @keyframes float-gentle {
@@ -191,17 +191,17 @@ All colors MUST be HSL.
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-7px);
     }
   }
 
   @keyframes pulse-soft {
     0%,
     100% {
-      opacity: 0.2;
+      opacity: 0.15;
     }
     50% {
-      opacity: 0.45;
+      opacity: 0.35;
     }
   }
 
