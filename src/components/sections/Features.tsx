@@ -1,39 +1,21 @@
 import { Check, Zap, Headphones, Settings, Heart, Clock } from "lucide-react";
 import Reveal from "@/components/ui/reveal";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Features = () => {
-  const features = [
-    {
-      icon: <Check className="w-6 h-6" />,
-      title: "Natürliche Haptik",
-      description: "Handbearbeitete Oberflächen, die angenehm warm werden und dich sofort in den Moment bringen."
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Intelligente Session",
-      description: "Jeder Stein aktiviert eine passende Meditation – abgestimmt auf Stimmung, Tageszeit und Fokus."
-    },
-    {
-      icon: <Headphones className="w-6 h-6" />,
-      title: "Raumfüllender Klang",
-      description: "Hochwertige Audio-Guides führen dich, ohne dass ein Bildschirm zwischen dir und der Erfahrung steht."
-    },
-    {
-      icon: <Settings className="w-6 h-6" />,
-      title: "Einfache Gesten",
-      description: "Einlegen, aufstellen, atmen – mehr Bedienung braucht es nicht. Mindstone reagiert intuitiv auf dich."
-    },
-    {
-      icon: <Heart className="w-6 h-6" />,
-      title: "Ritual für jeden Tag",
-      description: "Kurze Pausen oder längere Sessions – Mindstone hilft dir, achtsame Routinen aufzubauen."
-    },
-    {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Flexibler Rhythmus",
-      description: "5 bis 60 Minuten, auf Abruf. Du entscheidest, wie tief deine Reise heute geht."
-    }
+  const { t } = useLanguage();
+  const ft = t.features;
+
+  const icons = [
+    <Check className="w-6 h-6" />,
+    <Zap className="w-6 h-6" />,
+    <Headphones className="w-6 h-6" />,
+    <Settings className="w-6 h-6" />,
+    <Heart className="w-6 h-6" />,
+    <Clock className="w-6 h-6" />,
   ];
+
+  const features = ft.items.map((item, i) => ({ ...item, icon: icons[i] }));
 
   return (
     <section id="features" className="py-24 bg-background">
@@ -42,12 +24,12 @@ const Features = () => {
           <div className="text-center mb-16">
             <Reveal>
               <h2 className="text-4xl lg:text-5xl font-bold text-zen-earth mb-6">
-                Was dich mit Mindstone erwartet
+                {ft.h2}
               </h2>
             </Reveal>
             <Reveal delay={90}>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Jede Session ist ein bewusstes Erlebnis – spürbar, hörbar und ganz ohne digitale Ablenkung.
+                {ft.description}
               </p>
             </Reveal>
           </div>
@@ -69,7 +51,6 @@ const Features = () => {
               </Reveal>
             ))}
           </div>
-
         </div>
       </div>
     </section>

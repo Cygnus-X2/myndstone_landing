@@ -1,14 +1,10 @@
 import heroImage from "@/assets/mindstone-hero.jpg";
 import Reveal from "@/components/ui/reveal";
+import { useLanguage } from "@/context/LanguageContext";
 
 const scrollToSection = (targetId: string) => {
   if (typeof window === "undefined") return;
-
   const element = document.getElementById(targetId);
-  console.log(`Hero CTA clicked → attempting to scroll to #${targetId}`, {
-    found: Boolean(element),
-    targetId,
-  });
   if (element) {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   } else {
@@ -17,6 +13,9 @@ const scrollToSection = (targetId: string) => {
 };
 
 const Hero = () => {
+  const { t } = useLanguage();
+  const h = t.hero;
+
   return (
     <section className="relative min-h-screen bg-gradient-earth flex items-center justify-center overflow-hidden">
       <div className="container mx-auto px-6 py-20">
@@ -24,19 +23,17 @@ const Hero = () => {
           <Reveal direction="left" className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <span className="inline-flex items-center gap-2 rounded-full bg-zen-sage/30 text-zen-earth px-4 py-2 text-sm font-semibold">
-                Ein Stein. Ein Ritual. Ganz bei dir.
+                {h.badge}
               </span>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-zen-earth">Mindstone</span>
                 <br />
                 <span className="bg-gradient-stone bg-clip-text text-transparent">
-                  Meditation zum Anfassen
+                  {h.h1line2}
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-                Lege den Stein in deine Hand, spüre die Haptik und folge der Stimme.
-                Mindstone führt dich ohne Bildschirm, ohne Ablenkung – nur du, dein Atem
-                und ein warmes, greifbares Objekt.
+                {h.description}
               </p>
             </div>
 
@@ -46,29 +43,25 @@ const Hero = () => {
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-zen text-lg font-medium bg-gradient-stone text-primary-foreground hover:opacity-90 shadow-zen transition-zen focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 px-8 py-6"
                 onClick={(event) => {
                   event.preventDefault();
-                  console.log("Jetzt vormerken CTA pressed");
                   scrollToSection("cta");
                 }}
               >
-                Jetzt vormerken
+                {h.cta1}
               </a>
               <a
                 href="#how-it-works"
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-zen text-lg font-medium bg-zen-sand border border-zen-primary text-zen-earth hover:bg-zen-mist shadow-soft transition-zen focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 px-8 py-6"
                 onClick={(event) => {
                   event.preventDefault();
-                  console.log("Mehr erfahren CTA pressed");
                   scrollToSection("how-it-works");
                 }}
               >
-                Mehr erfahren
+                {h.cta2}
               </a>
             </div>
 
             <div className="pt-8 space-y-2">
-              <p className="text-sm text-muted-foreground">
-                ✨ Sanftes Licht • 🌿 Achtsame Audio-Guides • 🪨 Natürliche Haptik
-              </p>
+              <p className="text-sm text-muted-foreground">{h.features}</p>
             </div>
           </Reveal>
 

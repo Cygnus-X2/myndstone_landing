@@ -1,28 +1,27 @@
 import demoVideo from "@/assets/20251005_2202_Remix Video_remix_01k6tzg32kfss9hy9ybe2xyrcx.mp4";
 import Reveal from "@/components/ui/reveal";
+import { useLanguage } from "@/context/LanguageContext";
 
 const VideoShowcase = () => {
+  const { t } = useLanguage();
+  const vs = t.videoShowcase;
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1.1fr_1fr] items-center">
           <Reveal direction="left" className="space-y-6">
             <span className="inline-flex items-center gap-2 rounded-full bg-zen-sage/30 text-zen-earth px-4 py-2 text-sm font-semibold">
-              Sieh Mindstone in Aktion
+              {vs.badge}
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-zen-earth">
-              Hand aufs Herz, Stein auf Mindstone
+              {vs.h2}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Ein kurzer Blick in das Ritual: Sobald der Stein aufgelegt wird, erwacht Mindstone.
-              Sanftes Licht, wohltuende Klänge und eine fühlbare Wärme holen dich aus dem Kopf in den Körper.
+              {vs.description}
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                "Greifbare Aktivierung",
-                "Sanftes Ambient-Licht",
-                "Geführte Atemsequenzen",
-              ].map((item, index) => (
+              {vs.chips.map((item, index) => (
                 <Reveal key={item} delay={120 + index * 80} className="rounded-zen bg-zen-mist/60 px-4 py-3 text-sm font-medium text-zen-earth shadow-soft">
                   {item}
                 </Reveal>
@@ -46,7 +45,7 @@ const VideoShowcase = () => {
               </video>
             </div>
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur text-white text-xs tracking-wide uppercase px-4 py-2 rounded-full">
-              Mindstone Demo · 10 Sekunden
+              {vs.caption}
             </div>
           </Reveal>
         </div>
