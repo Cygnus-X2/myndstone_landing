@@ -2,223 +2,697 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Mindstone Design System - Zen & Natural Theme */
-    --background: 35 20% 98%;
-    --foreground: 30 15% 15%;
-
-    --card: 40 25% 97%;
-    --card-foreground: 30 15% 15%;
-
-    --popover: 40 25% 97%;
-    --popover-foreground: 30 15% 15%;
-
-    /* Primary - Warm Stone */
-    --primary: 25 35% 45%;
-    --primary-foreground: 40 25% 97%;
-
-    /* Secondary - Sage Green */
-    --secondary: 85 25% 65%;
-    --secondary-foreground: 30 15% 15%;
-
-    /* Muted - Soft Beige */
-    --muted: 40 15% 92%;
-    --muted-foreground: 30 12% 55%;
-
-    /* Accent - Deep Earth */
-    --accent: 20 30% 35%;
-    --accent-foreground: 40 25% 97%;
-
+    --background: 36 29% 94%;
+    --foreground: 29 13% 10%;
+    --card: 37 33% 93%;
+    --card-foreground: 29 13% 10%;
+    --popover: 37 33% 93%;
+    --popover-foreground: 29 13% 10%;
+    --primary: 25 13% 12%;
+    --primary-foreground: 38 40% 96%;
+    --secondary: 42 17% 88%;
+    --secondary-foreground: 29 13% 10%;
+    --muted: 37 16% 84%;
+    --muted-foreground: 30 7% 36%;
+    --accent: 98 13% 37%;
+    --accent-foreground: 38 40% 96%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 25% 97%;
-
-    --border: 40 15% 88%;
-    --input: 40 15% 90%;
-    --ring: 25 35% 45%;
-
-    /* Custom Mindstone Tokens */
-    --zen-primary: 25 35% 45%;
-    --zen-primary-light: 25 25% 65%;
-    --zen-sage: 85 25% 65%;
-    --zen-sage-light: 85 20% 85%;
-    --zen-earth: 20 30% 35%;
-    --zen-sand: 40 20% 88%;
-    --zen-mist: 85 15% 95%;
-
-    /* Gradients */
-    --gradient-zen: linear-gradient(135deg, hsl(25 25% 65%) 0%, hsl(85 20% 85%) 100%);
-    --gradient-earth: linear-gradient(180deg, hsl(40 25% 97%) 0%, hsl(40 15% 92%) 100%);
-    --gradient-stone: linear-gradient(145deg, hsl(25 35% 45%) 0%, hsl(20 30% 35%) 100%);
-
-    /* Shadows */
-    --shadow-zen: 0 10px 30px -10px hsl(25 35% 45% / 0.15);
-    --shadow-soft: 0 4px 20px -4px hsl(25 25% 65% / 0.20);
-    --shadow-deep: 0 20px 40px -15px hsl(20 30% 35% / 0.25);
-
-    /* Animations */
-    --transition-zen: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-soft: all 0.3s ease-out;
-
-    --radius: 1rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 38 40% 96%;
+    --border: 35 12% 80%;
+    --input: 35 12% 80%;
+    --ring: 25 13% 12%;
+    --radius: 0.5rem;
   }
 
-  .dark {
-    /* Dark mode with warm, earthy tones */
-    --background: 25 15% 8%;
-    --foreground: 40 25% 95%;
-
-    --card: 25 15% 10%;
-    --card-foreground: 40 25% 95%;
-
-    --popover: 25 15% 10%;
-    --popover-foreground: 40 25% 95%;
-
-    --primary: 25 25% 65%;
-    --primary-foreground: 25 15% 8%;
-
-    --secondary: 85 15% 25%;
-    --secondary-foreground: 40 25% 95%;
-
-    --muted: 25 10% 15%;
-    --muted-foreground: 40 15% 65%;
-
-    --accent: 85 20% 30%;
-    --accent-foreground: 40 25% 95%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 25% 95%;
-
-    --border: 25 10% 20%;
-    --input: 25 10% 18%;
-    --ring: 25 25% 65%;
-
-    /* Dark mode custom tokens */
-    --zen-primary: 25 25% 65%;
-    --zen-primary-light: 25 20% 45%;
-    --zen-sage: 85 15% 35%;
-    --zen-sage-light: 85 10% 25%;
-    --zen-earth: 20 20% 25%;
-    --zen-sand: 25 8% 18%;
-    --zen-mist: 25 5% 12%;
-
-    --gradient-zen: linear-gradient(135deg, hsl(25 20% 45%) 0%, hsl(85 10% 25%) 100%);
-    --gradient-earth: linear-gradient(180deg, hsl(25 15% 10%) 0%, hsl(25 10% 15%) 100%);
-    --gradient-stone: linear-gradient(145deg, hsl(25 25% 65%) 0%, hsl(20 20% 25%) 100%);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground antialiased font-sans;
+    @apply bg-background text-foreground antialiased;
+    margin: 0;
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
-@layer utilities {
-  .transition-zen {
-    @apply transition-all duration-300 ease-out;
+.atem-page {
+  min-height: 100vh;
+  background: #f5f2ec;
+  color: #171513;
+  padding: 40px;
+}
+
+.atem-shell {
+  width: min(100%, 1264px);
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ebe6dd;
+  box-shadow: 0 24px 80px rgb(32 25 18 / 0.14);
+}
+
+.atem-hero {
+  position: relative;
+  min-height: 516px;
+  overflow: hidden;
+  color: #f7f3ec;
+  background: #080706;
+}
+
+.atem-hero__image,
+.atem-final img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atem-hero__image {
+  object-position: center center;
+}
+
+.atem-hero__shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 0.86) 0%, rgb(0 0 0 / 0.52) 32%, rgb(0 0 0 / 0.08) 63%),
+    linear-gradient(180deg, rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.06) 42%, rgb(0 0 0 / 0.18));
+}
+
+.atem-nav {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 160px 1fr 170px;
+  align-items: center;
+  gap: 24px;
+  padding: 27px 42px 0;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.atem-logo,
+.atem-hero__brand,
+.atem-final p {
+  font-size: 24px;
+  letter-spacing: 0.22em;
+  line-height: 1;
+}
+
+.atem-nav__links,
+.atem-nav__actions,
+.atem-hero__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.atem-nav__links {
+  justify-content: center;
+  gap: 34px;
+}
+
+.atem-nav__actions {
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.atem-pill {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #f4efe7;
+  color: #171513;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.atem-pill--small {
+  min-height: 34px;
+  padding: 0 20px;
+  font-size: 10px;
+}
+
+.atem-hero__content {
+  position: relative;
+  z-index: 1;
+  width: min(500px, calc(100% - 84px));
+  margin-left: 100px;
+  padding-top: 94px;
+}
+
+.atem-hero__brand {
+  margin: 0 0 13px;
+  font-size: clamp(54px, 6.4vw, 88px);
+  color: #fbf9f4;
+}
+
+.atem-hero h1,
+.atem-copy-panel h2,
+.atem-device h2,
+.atem-stones h2,
+.atem-final h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.atem-hero h1 {
+  font-size: clamp(34px, 3.9vw, 48px);
+  line-height: 1.08;
+}
+
+.atem-hero__copy {
+  width: 288px;
+  margin: 26px 0 34px;
+  font-size: 13px;
+  line-height: 1.38;
+}
+
+.atem-hero__buttons {
+  gap: 28px;
+}
+
+.atem-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.atem-split,
+.atem-device {
+  display: grid;
+  border-top: 1px solid #d5cec3;
+  background: #eeeae4;
+}
+
+.atem-split--intro {
+  grid-template-columns: 1fr 1fr;
+  height: 290px;
+  min-height: 290px;
+}
+
+.atem-split > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+.atem-photo {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #18130f;
+}
+
+.atem-photo img,
+.atem-gallery img,
+.atem-device__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.atem-photo--hand img {
+  object-position: 52% 54%;
+  filter: saturate(0.62) sepia(0.16) brightness(0.7) contrast(1.08);
+}
+
+.atem-copy-panel {
+  padding: 44px 76px;
+}
+
+.atem-copy-panel h2 {
+  font-size: 31px;
+  line-height: 1.02;
+}
+
+.atem-copy-panel p {
+  width: 235px;
+  margin: 26px 0 0;
+  font-size: 12px;
+  line-height: 1.38;
+}
+
+.atem-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 54px;
+  padding: 29px 64px 28px;
+  border-top: 1px solid #d5cec3;
+  background: #eeeae4;
+}
+
+.atem-step {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.atem-step__icon {
+  margin-top: 15px;
+  color: #7f7770;
+}
+
+.atem-step span {
+  display: block;
+  margin-bottom: 9px;
+  color: #7d756e;
+  font-size: 10px;
+}
+
+.atem-step h3 {
+  margin: 0 0 7px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.atem-step p {
+  max-width: 210px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.33;
+}
+
+.atem-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 0 54px 25px;
+  background: #eeeae4;
+}
+
+.atem-gallery figure {
+  position: relative;
+  height: 190px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #28241e;
+}
+
+.atem-gallery figure:nth-child(1) {
+  background:
+    linear-gradient(135deg, rgb(246 243 236 / 0.22), rgb(52 46 39 / 0.2)),
+    #9f9688;
+}
+
+.atem-gallery figure:nth-child(2) img {
+  object-position: 53% 61%;
+}
+
+.atem-gallery figure:nth-child(3) {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(120deg, rgb(24 18 15 / 0.28), rgb(246 240 228 / 0.12)),
+    url("@/assets/atem-product-scene.png") center / cover;
+}
+
+.atem-stone-set {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 78px);
+  place-content: center;
+  gap: 22px 34px;
+}
+
+.stone-sample,
+.atem-stone-card i {
+  display: block;
+  border-radius: 50%;
+  box-shadow:
+    inset -12px -16px 18px rgb(0 0 0 / 0.24),
+    inset 8px 9px 14px rgb(255 255 255 / 0.18),
+    0 9px 14px rgb(35 27 20 / 0.18);
+}
+
+.stone-sample {
+  width: 72px;
+  height: 54px;
+}
+
+.stone-obsidian {
+  background:
+    radial-gradient(circle at 30% 24%, #56534d, transparent 18%),
+    radial-gradient(circle at 52% 52%, #151411, #030303 76%);
+}
+
+.stone-jade {
+  background:
+    radial-gradient(circle at 28% 22%, #7b9580, transparent 17%),
+    radial-gradient(circle at 54% 50%, #496353, #1f372d 78%);
+}
+
+.stone-quartz {
+  background:
+    radial-gradient(circle at 24% 19%, #fffdf7, transparent 16%),
+    radial-gradient(circle at 58% 50%, #f2eee5, #bdb7ad 78%);
+}
+
+.stone-personal {
+  background:
+    radial-gradient(circle at 27% 20%, #d2d0c6, transparent 18%),
+    radial-gradient(circle at 58% 50%, #7f7b70, #393731 78%);
+}
+
+.atem-phone {
+  width: 104px;
+  height: 164px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: #0c0d0d;
+  box-shadow: 0 18px 36px rgb(0 0 0 / 0.4);
+  color: #eee8de;
+  font-size: 8px;
+}
+
+.atem-phone__ring {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px dotted rgb(238 232 222 / 0.76);
+}
+
+.atem-phone span {
+  position: absolute;
+  bottom: 34px;
+}
+
+.atem-split--truth {
+  grid-template-columns: 1fr 1fr;
+  height: 283px;
+  min-height: 283px;
+}
+
+.atem-photo--wide img {
+  object-position: 51% 61%;
+  filter: sepia(0.12) saturate(0.82) brightness(0.72) contrast(1.06);
+}
+
+.atem-copy-panel--truth {
+  padding-top: 42px;
+}
+
+.atem-device {
+  grid-template-columns: 1fr 300px 1fr;
+  min-height: 245px;
+}
+
+.atem-device__text {
+  padding: 61px 64px 30px;
+}
+
+.atem-device h2 {
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.atem-device p {
+  max-width: 300px;
+  margin: 24px 0 0;
+  font-size: 12px;
+  line-height: 1.38;
+}
+
+.atem-feature-list {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  margin: 0;
+  padding: 24px 20px;
+  list-style: none;
+  border-left: 1px solid #d5cec3;
+}
+
+.atem-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+}
+
+.atem-feature-list svg {
+  color: #8b8278;
+  flex: 0 0 auto;
+}
+
+.atem-device__image {
+  margin: 0;
+  overflow: hidden;
+  background: #090807;
+}
+
+.atem-device__image img {
+  object-position: 48% 58%;
+  transform: scale(1.18);
+}
+
+.atem-stones {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, 1fr);
+  min-height: 139px;
+  border-top: 1px solid #d5cec3;
+  background: #eeeae4;
+}
+
+.atem-stones__intro {
+  padding: 32px 64px;
+}
+
+.atem-stones h2 {
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+.atem-stones__intro a {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 11px;
+}
+
+.atem-stone-card {
+  display: grid;
+  place-items: end center;
+  gap: 4px;
+  padding: 18px 10px 17px;
+  border-left: 1px solid #d5cec3;
+  text-align: center;
+}
+
+.atem-stone-card i {
+  width: 73px;
+  height: 46px;
+  margin: 0 0 8px;
+}
+
+.atem-stone-card strong {
+  font-size: 9px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.atem-stone-card span {
+  font-size: 9px;
+  line-height: 1;
+}
+
+.atem-final {
+  position: relative;
+  min-height: 152px;
+  overflow: hidden;
+  color: #f7f1e8;
+  background: #0c0a08;
+}
+
+.atem-final::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.78), rgb(0 0 0 / 0.14) 60%);
+}
+
+.atem-final img {
+  object-position: 64% 61%;
+}
+
+.atem-final div {
+  position: relative;
+  z-index: 1;
+  padding: 38px 64px;
+}
+
+.atem-final h2 {
+  font-size: 33px;
+  line-height: 1.05;
+}
+
+.atem-final p {
+  margin: 18px 0 0;
+}
+
+@media (max-width: 900px) {
+  .atem-page {
+    padding: 0;
   }
 
-  .transition-soft {
-    @apply transition-all duration-200 ease-in-out;
+  .atem-shell {
+    width: 100%;
   }
 
-  .reveal {
-    opacity: 0;
-    transform: translate3d(0, 14px, 0);
-    transition-property: opacity, transform;
-    transition-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
-    will-change: opacity, transform;
+  .atem-nav {
+    grid-template-columns: auto 1fr;
+    padding: 22px 22px 0;
   }
 
-  .reveal.reveal-in {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  .atem-nav__links {
+    display: none;
   }
 
-  .reveal-left {
-    transform: translate3d(-14px, 0, 0);
+  .atem-nav__actions {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    z-index: 4;
+    grid-column: 2;
+    justify-self: end;
+    gap: 14px;
   }
 
-  .reveal-right {
-    transform: translate3d(14px, 0, 0);
+  .atem-nav__actions .atem-pill--small {
+    display: inline-flex;
+    min-width: 96px;
   }
 
-  .reveal-down {
-    transform: translate3d(0, -14px, 0);
+  .atem-hero {
+    min-height: 620px;
   }
 
-  .reveal-up {
-    transform: translate3d(0, 14px, 0);
+  .atem-hero__image {
+    object-position: 58% 50%;
   }
 
-  .float-gentle {
-    animation: float-gentle 16s ease-in-out infinite;
+  .atem-hero__shade {
+    background:
+      linear-gradient(180deg, rgb(0 0 0 / 0.68), rgb(0 0 0 / 0.25) 45%, rgb(0 0 0 / 0.62)),
+      linear-gradient(90deg, rgb(0 0 0 / 0.72), transparent);
   }
 
-  .pulse-soft {
-    animation: pulse-soft 12s ease-in-out infinite;
+  .atem-hero__content {
+    width: calc(100% - 44px);
+    margin-left: 22px;
+    padding-top: 110px;
   }
 
-  @keyframes float-gentle {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-7px);
-    }
+  .atem-hero__copy {
+    width: min(300px, 100%);
   }
 
-  @keyframes pulse-soft {
-    0%,
-    100% {
-      opacity: 0.15;
-    }
-    50% {
-      opacity: 0.35;
-    }
+  .atem-split,
+  .atem-split--intro,
+  .atem-split--truth,
+  .atem-device,
+  .atem-stones,
+  .atem-gallery,
+  .atem-steps {
+    grid-template-columns: 1fr;
+    height: auto;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .reveal,
-    .reveal-left,
-    .reveal-right,
-    .reveal-up,
-    .reveal-down {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
+  .atem-photo,
+  .atem-gallery figure,
+  .atem-device__image {
+    min-height: 260px;
+  }
 
-    .float-gentle,
-    .pulse-soft {
-      animation: none;
-    }
+  .atem-copy-panel,
+  .atem-device__text,
+  .atem-stones__intro,
+  .atem-final div {
+    padding: 34px 24px;
+  }
+
+  .atem-steps {
+    gap: 26px;
+    padding: 32px 24px;
+  }
+
+  .atem-gallery {
+    gap: 10px;
+    padding: 0 24px 28px;
+  }
+
+  .atem-device {
+    min-height: auto;
+  }
+
+  .atem-feature-list {
+    border-top: 1px solid #d5cec3;
+    border-left: 0;
+    padding: 2px 24px 34px;
+  }
+
+  .atem-stone-card {
+    grid-template-columns: 88px 1fr;
+    place-items: center start;
+    border-top: 1px solid #d5cec3;
+    border-left: 0;
+    text-align: left;
+  }
+
+  .atem-stone-card span {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .atem-nav__actions a:first-child {
+    display: none;
+  }
+
+  .atem-nav__actions {
+    display: none;
+  }
+
+  .atem-logo {
+    font-size: 19px;
+  }
+
+  .atem-hero__brand {
+    font-size: 46px;
+  }
+
+  .atem-hero h1 {
+    font-size: 32px;
+  }
+
+  .atem-hero__buttons {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 }
