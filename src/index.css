@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --background: 36 29% 94%;
+    --background: 38 32% 96%;
     --foreground: 29 13% 10%;
-    --card: 37 33% 93%;
+    --card: 38 30% 95%;
     --card-foreground: 29 13% 10%;
-    --popover: 37 33% 93%;
+    --popover: 38 30% 95%;
     --popover-foreground: 29 13% 10%;
     --primary: 25 13% 12%;
     --primary-foreground: 38 40% 96%;
@@ -48,31 +48,35 @@
   }
 }
 
-.atem-page {
+/* ── Page shell ─────────────────────────────────────── */
+
+.osora-page {
   min-height: 100vh;
-  background: #f5f2ec;
+  background: #fbf8f2;
   color: #171513;
   padding: 40px;
 }
 
-.atem-shell {
+.osora-shell {
   width: min(100%, 1264px);
   margin: 0 auto;
   overflow: hidden;
-  background: #ebe6dd;
-  box-shadow: 0 24px 80px rgb(32 25 18 / 0.14);
+  background: #f2ece0;
+  box-shadow: 0 24px 80px rgb(32 25 18 / 0.11);
 }
 
-.atem-hero {
+/* ── Hero ───────────────────────────────────────────── */
+
+.osora-hero {
   position: relative;
-  min-height: 516px;
+  min-height: 580px;
   overflow: hidden;
   color: #f7f3ec;
   background: #080706;
 }
 
-.atem-hero__image,
-.atem-final img {
+.osora-hero__image,
+.osora-final img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -80,56 +84,75 @@
   object-fit: cover;
 }
 
-.atem-hero__image {
+.osora-hero__image {
   object-position: center center;
 }
 
-.atem-hero__shade {
+.osora-hero__shade {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgb(0 0 0 / 0.86) 0%, rgb(0 0 0 / 0.52) 32%, rgb(0 0 0 / 0.08) 63%),
-    linear-gradient(180deg, rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.06) 42%, rgb(0 0 0 / 0.18));
+    linear-gradient(90deg, rgb(0 0 0 / 0.76) 0%, rgb(0 0 0 / 0.44) 36%, rgb(0 0 0 / 0.05) 66%),
+    linear-gradient(180deg, rgb(0 0 0 / 0.36), rgb(0 0 0 / 0.04) 46%, rgb(0 0 0 / 0.12));
 }
 
-.atem-nav {
+/* ── Nav ────────────────────────────────────────────── */
+
+.osora-nav {
   position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: 160px 1fr 170px;
   align-items: center;
   gap: 24px;
-  padding: 27px 42px 0;
-  font-size: 10px;
+  padding: 28px 44px 0;
+  font-size: 11px;
   line-height: 1;
 }
 
-.atem-logo,
-.atem-hero__brand,
-.atem-final p {
+.osora-logo,
+.osora-hero__brand,
+.osora-final p {
   font-size: 24px;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   line-height: 1;
 }
 
-.atem-nav__links,
-.atem-nav__actions,
-.atem-hero__buttons {
+.osora-logo {
+  transition: opacity 0.2s ease;
+}
+
+.osora-logo:hover {
+  opacity: 0.68;
+}
+
+.osora-nav__links,
+.osora-nav__actions,
+.osora-hero__buttons {
   display: flex;
   align-items: center;
 }
 
-.atem-nav__links {
+.osora-nav__links {
   justify-content: center;
   gap: 34px;
 }
 
-.atem-nav__actions {
+.osora-nav__links a {
+  opacity: 0.84;
+  transition: opacity 0.18s ease;
+}
+
+.osora-nav__links a:hover {
+  opacity: 1;
+}
+
+.osora-nav__actions {
   justify-content: flex-end;
   gap: 22px;
 }
 
-.atem-pill {
+.osora-pill {
   display: inline-flex;
   min-height: 42px;
   align-items: center;
@@ -141,81 +164,98 @@
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
+  transition: background 0.18s ease;
 }
 
-.atem-pill--small {
+.osora-pill:hover {
+  background: #fffdf8;
+}
+
+.osora-pill--small {
   min-height: 34px;
   padding: 0 20px;
   font-size: 10px;
 }
 
-.atem-hero__content {
+/* ── Hero content ───────────────────────────────────── */
+
+.osora-hero__content {
   position: relative;
   z-index: 1;
-  width: min(500px, calc(100% - 84px));
+  width: min(520px, calc(100% - 88px));
   margin-left: 100px;
-  padding-top: 94px;
+  padding-top: 104px;
+  padding-bottom: 64px;
 }
 
-.atem-hero__brand {
-  margin: 0 0 13px;
+.osora-hero__brand {
+  margin: 0 0 14px;
   font-size: clamp(54px, 6.4vw, 88px);
   color: #fbf9f4;
 }
 
-.atem-hero h1,
-.atem-copy-panel h2,
-.atem-device h2,
-.atem-stones h2,
-.atem-final h2 {
+.osora-hero h1,
+.osora-copy-panel h2,
+.osora-device h2,
+.osora-stones h2,
+.osora-final h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-weight: 400;
   letter-spacing: 0;
 }
 
-.atem-hero h1 {
-  font-size: clamp(34px, 3.9vw, 48px);
+.osora-hero h1 {
+  font-size: clamp(36px, 4.0vw, 50px);
   line-height: 1.08;
 }
 
-.atem-hero__copy {
-  width: 288px;
-  margin: 26px 0 34px;
-  font-size: 13px;
-  line-height: 1.38;
+.osora-hero__copy {
+  width: min(310px, 100%);
+  margin: 28px 0 36px;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
 }
 
-.atem-hero__buttons {
+.osora-hero__buttons {
   gap: 28px;
 }
 
-.atem-link {
+.osora-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 13px;
+  opacity: 0.78;
+  transition: opacity 0.18s ease;
 }
 
-.atem-split,
-.atem-device {
+.osora-link:hover {
+  opacity: 1;
+}
+
+/* ── Split panels ───────────────────────────────────── */
+
+.osora-split,
+.osora-device {
   display: grid;
-  border-top: 1px solid #d5cec3;
-  background: #eeeae4;
+  border-top: 1px solid #dfd8cc;
+  background: #ede8dc;
 }
 
-.atem-split--intro {
+.osora-split--intro {
   grid-template-columns: 1fr 1fr;
-  height: 290px;
-  min-height: 290px;
+  height: 310px;
+  min-height: 310px;
 }
 
-.atem-split > * {
+.osora-split > * {
   min-width: 0;
   min-height: 0;
 }
 
-.atem-photo {
+.osora-photo {
   margin: 0;
   min-height: 100%;
   height: 100%;
@@ -223,115 +263,123 @@
   background: #18130f;
 }
 
-.atem-photo img,
-.atem-gallery img,
-.atem-device__image img {
+.osora-photo img,
+.osora-gallery img,
+.osora-device__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.atem-photo--hand img {
+.osora-photo--hand img {
   object-position: 52% 54%;
-  filter: saturate(0.62) sepia(0.16) brightness(0.7) contrast(1.08);
+  filter: saturate(0.7) sepia(0.1) brightness(0.86) contrast(1.05);
 }
 
-.atem-copy-panel {
-  padding: 44px 76px;
+.osora-copy-panel {
+  padding: 48px 80px;
 }
 
-.atem-copy-panel h2 {
-  font-size: 31px;
-  line-height: 1.02;
+.osora-copy-panel h2 {
+  font-size: 33px;
+  line-height: 1.04;
 }
 
-.atem-copy-panel p {
-  width: 235px;
+.osora-copy-panel p {
+  width: min(260px, 100%);
   margin: 26px 0 0;
-  font-size: 12px;
-  line-height: 1.38;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
-.atem-steps {
+/* ── Steps ──────────────────────────────────────────── */
+
+.osora-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 54px;
-  padding: 29px 64px 28px;
-  border-top: 1px solid #d5cec3;
-  background: #eeeae4;
+  padding: 36px 64px;
+  border-top: 1px solid #dfd8cc;
+  background: #ede8dc;
 }
 
-.atem-step {
+.osora-step {
   display: grid;
   grid-template-columns: 44px 1fr;
   gap: 20px;
   align-items: start;
 }
 
-.atem-step__icon {
+.osora-step__icon {
   margin-top: 15px;
-  color: #7f7770;
+  color: #7a9880;
 }
 
-.atem-step span {
+.osora-step span {
   display: block;
   margin-bottom: 9px;
   color: #7d756e;
   font-size: 10px;
+  letter-spacing: 0.06em;
 }
 
-.atem-step h3 {
-  margin: 0 0 7px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
+.osora-step h3 {
+  margin: 0 0 8px;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 21px;
   font-weight: 400;
   line-height: 1;
 }
 
-.atem-step p {
-  max-width: 210px;
+.osora-step p {
+  max-width: 220px;
   margin: 0;
-  font-size: 11px;
-  line-height: 1.33;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #4a433c;
 }
 
-.atem-gallery {
+/* ── Gallery ────────────────────────────────────────── */
+
+.osora-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
-  padding: 0 54px 25px;
-  background: #eeeae4;
+  padding: 16px 54px 32px;
+  background: #ede8dc;
 }
 
-.atem-gallery figure {
+.osora-gallery figure {
   position: relative;
-  height: 190px;
+  height: 210px;
   margin: 0;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #28241e;
 }
 
-.atem-gallery figure:nth-child(1) {
+.osora-gallery figure:nth-child(1) {
   background:
     linear-gradient(135deg, rgb(246 243 236 / 0.22), rgb(52 46 39 / 0.2)),
     #9f9688;
 }
 
-.atem-gallery figure:nth-child(2) img {
+.osora-gallery figure:nth-child(2) img {
   object-position: 53% 61%;
 }
 
-.atem-gallery figure:nth-child(3) {
+.osora-gallery figure:nth-child(3) {
   display: grid;
   place-items: center;
   background:
-    linear-gradient(120deg, rgb(24 18 15 / 0.28), rgb(246 240 228 / 0.12)),
+    linear-gradient(120deg, rgb(24 18 15 / 0.22), rgb(246 240 228 / 0.1)),
     url("@/assets/atem-product-scene.png") center / cover;
 }
 
-.atem-stone-set {
+/* ── Stone visuals ──────────────────────────────────── */
+
+.osora-stone-set {
   position: absolute;
   inset: 0;
   display: grid;
@@ -341,13 +389,13 @@
 }
 
 .stone-sample,
-.atem-stone-card i {
+.osora-stone-card i {
   display: block;
   border-radius: 50%;
   box-shadow:
-    inset -12px -16px 18px rgb(0 0 0 / 0.24),
-    inset 8px 9px 14px rgb(255 255 255 / 0.18),
-    0 9px 14px rgb(35 27 20 / 0.18);
+    inset -12px -16px 18px rgb(0 0 0 / 0.22),
+    inset 8px 9px 14px rgb(255 255 255 / 0.2),
+    0 9px 14px rgb(35 27 20 / 0.16);
 }
 
 .stone-sample {
@@ -379,201 +427,226 @@
     radial-gradient(circle at 58% 50%, #7f7b70, #393731 78%);
 }
 
-.atem-phone {
+/* ── App screen mock ────────────────────────────────── */
+
+.osora-phone {
   width: 104px;
   height: 164px;
   display: grid;
   place-items: center;
   border-radius: 18px;
   background: #0c0d0d;
-  box-shadow: 0 18px 36px rgb(0 0 0 / 0.4);
+  box-shadow: 0 18px 36px rgb(0 0 0 / 0.38);
   color: #eee8de;
   font-size: 8px;
 }
 
-.atem-phone__ring {
+.osora-phone__ring {
   width: 58px;
   height: 58px;
   border-radius: 50%;
   border: 1px dotted rgb(238 232 222 / 0.76);
 }
 
-.atem-phone span {
+.osora-phone span {
   position: absolute;
   bottom: 34px;
 }
 
-.atem-split--truth {
+/* ── Truth panel ────────────────────────────────────── */
+
+.osora-split--truth {
   grid-template-columns: 1fr 1fr;
-  height: 283px;
-  min-height: 283px;
+  height: 300px;
+  min-height: 300px;
 }
 
-.atem-photo--wide img {
+.osora-photo--wide img {
   object-position: 51% 61%;
-  filter: sepia(0.12) saturate(0.82) brightness(0.72) contrast(1.06);
+  filter: sepia(0.08) saturate(0.88) brightness(0.88) contrast(1.04);
 }
 
-.atem-copy-panel--truth {
-  padding-top: 42px;
+.osora-copy-panel--truth {
+  padding-top: 46px;
 }
 
-.atem-device {
+/* ── Device / features section ──────────────────────── */
+
+.osora-device {
   grid-template-columns: 1fr 300px 1fr;
   min-height: 245px;
 }
 
-.atem-device__text {
-  padding: 61px 64px 30px;
+.osora-device__text {
+  padding: 62px 64px 32px;
 }
 
-.atem-device h2 {
-  font-size: 28px;
+.osora-device h2 {
+  font-size: 30px;
   line-height: 1.05;
 }
 
-.atem-device p {
+.osora-device p {
   max-width: 300px;
   margin: 24px 0 0;
-  font-size: 12px;
-  line-height: 1.38;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
-.atem-feature-list {
+.osora-feature-list {
   display: grid;
   align-content: center;
   gap: 14px;
   margin: 0;
-  padding: 24px 20px;
+  padding: 24px 22px;
   list-style: none;
-  border-left: 1px solid #d5cec3;
+  border-left: 1px solid #dfd8cc;
 }
 
-.atem-feature-list li {
+.osora-feature-list li {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
-.atem-feature-list svg {
-  color: #8b8278;
+.osora-feature-list svg {
+  color: #7a9880;
   flex: 0 0 auto;
 }
 
-.atem-device__image {
+.osora-device__image {
   margin: 0;
   overflow: hidden;
   background: #090807;
 }
 
-.atem-device__image img {
+.osora-device__image img {
   object-position: 48% 58%;
   transform: scale(1.18);
 }
 
-.atem-stones {
+/* ── Stone showcase ─────────────────────────────────── */
+
+.osora-stones {
   display: grid;
   grid-template-columns: 1.2fr repeat(4, 1fr);
-  min-height: 139px;
-  border-top: 1px solid #d5cec3;
-  background: #eeeae4;
+  min-height: 148px;
+  border-top: 1px solid #dfd8cc;
+  background: #ede8dc;
 }
 
-.atem-stones__intro {
-  padding: 32px 64px;
+.osora-stones__intro {
+  padding: 34px 64px;
 }
 
-.atem-stones h2 {
-  font-size: 25px;
+.osora-stones h2 {
+  font-size: 26px;
   line-height: 1.1;
 }
 
-.atem-stones__intro a {
+.osora-stones__intro a {
   display: inline-block;
-  margin-top: 24px;
-  font-size: 11px;
+  margin-top: 18px;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 0.18s ease;
 }
 
-.atem-stone-card {
+.osora-stones__intro a:hover {
+  opacity: 1;
+}
+
+.osora-stone-card {
   display: grid;
   place-items: end center;
   gap: 4px;
-  padding: 18px 10px 17px;
-  border-left: 1px solid #d5cec3;
+  padding: 18px 10px;
+  border-left: 1px solid #dfd8cc;
   text-align: center;
+  transition: background 0.22s ease;
 }
 
-.atem-stone-card i {
-  width: 73px;
-  height: 46px;
-  margin: 0 0 8px;
+.osora-stone-card:hover {
+  background: rgb(255 255 255 / 0.16);
 }
 
-.atem-stone-card strong {
-  font-size: 9px;
+.osora-stone-card i {
+  width: 74px;
+  height: 50px;
+  margin: 0 0 10px;
+}
+
+.osora-stone-card strong {
+  font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.atem-stone-card span {
-  font-size: 9px;
+.osora-stone-card span {
+  font-size: 10px;
   line-height: 1;
+  opacity: 0.58;
 }
 
-.atem-final {
+/* ── Final CTA ──────────────────────────────────────── */
+
+.osora-final {
   position: relative;
-  min-height: 152px;
+  min-height: 200px;
   overflow: hidden;
   color: #f7f1e8;
   background: #0c0a08;
 }
 
-.atem-final::after {
+.osora-final::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgb(0 0 0 / 0.78), rgb(0 0 0 / 0.14) 60%);
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.72), rgb(0 0 0 / 0.1) 64%);
 }
 
-.atem-final img {
+.osora-final img {
   object-position: 64% 61%;
 }
 
-.atem-final div {
+.osora-final div {
   position: relative;
   z-index: 1;
-  padding: 38px 64px;
+  padding: 50px 64px;
 }
 
-.atem-final h2 {
-  font-size: 33px;
+.osora-final h2 {
+  font-size: 36px;
   line-height: 1.05;
 }
 
-.atem-final p {
+.osora-final p {
   margin: 18px 0 0;
 }
 
+/* ── Responsive: tablet ─────────────────────────────── */
+
 @media (max-width: 900px) {
-  .atem-page {
+  .osora-page {
     padding: 0;
   }
 
-  .atem-shell {
+  .osora-shell {
     width: 100%;
   }
 
-  .atem-nav {
+  .osora-nav {
     grid-template-columns: auto 1fr;
     padding: 22px 22px 0;
   }
 
-  .atem-nav__links {
+  .osora-nav__links {
     display: none;
   }
 
-  .atem-nav__actions {
+  .osora-nav__actions {
     position: absolute;
     top: 22px;
     right: 22px;
@@ -583,114 +656,116 @@
     gap: 14px;
   }
 
-  .atem-nav__actions .atem-pill--small {
+  .osora-nav__actions .osora-pill--small {
     display: inline-flex;
     min-width: 96px;
   }
 
-  .atem-hero {
-    min-height: 620px;
+  .osora-hero {
+    min-height: 640px;
   }
 
-  .atem-hero__image {
+  .osora-hero__image {
     object-position: 58% 50%;
   }
 
-  .atem-hero__shade {
+  .osora-hero__shade {
     background:
-      linear-gradient(180deg, rgb(0 0 0 / 0.68), rgb(0 0 0 / 0.25) 45%, rgb(0 0 0 / 0.62)),
-      linear-gradient(90deg, rgb(0 0 0 / 0.72), transparent);
+      linear-gradient(180deg, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2) 46%, rgb(0 0 0 / 0.54)),
+      linear-gradient(90deg, rgb(0 0 0 / 0.66), transparent);
   }
 
-  .atem-hero__content {
+  .osora-hero__content {
     width: calc(100% - 44px);
     margin-left: 22px;
-    padding-top: 110px;
+    padding-top: 116px;
   }
 
-  .atem-hero__copy {
+  .osora-hero__copy {
     width: min(300px, 100%);
   }
 
-  .atem-split,
-  .atem-split--intro,
-  .atem-split--truth,
-  .atem-device,
-  .atem-stones,
-  .atem-gallery,
-  .atem-steps {
+  .osora-split,
+  .osora-split--intro,
+  .osora-split--truth,
+  .osora-device,
+  .osora-stones,
+  .osora-gallery,
+  .osora-steps {
     grid-template-columns: 1fr;
     height: auto;
   }
 
-  .atem-photo,
-  .atem-gallery figure,
-  .atem-device__image {
-    min-height: 260px;
+  .osora-photo,
+  .osora-gallery figure,
+  .osora-device__image {
+    min-height: 270px;
   }
 
-  .atem-copy-panel,
-  .atem-device__text,
-  .atem-stones__intro,
-  .atem-final div {
+  .osora-copy-panel,
+  .osora-device__text,
+  .osora-stones__intro,
+  .osora-final div {
+    padding: 36px 24px;
+  }
+
+  .osora-steps {
+    gap: 28px;
     padding: 34px 24px;
   }
 
-  .atem-steps {
-    gap: 26px;
-    padding: 32px 24px;
-  }
-
-  .atem-gallery {
+  .osora-gallery {
     gap: 10px;
     padding: 0 24px 28px;
   }
 
-  .atem-device {
+  .osora-device {
     min-height: auto;
   }
 
-  .atem-feature-list {
-    border-top: 1px solid #d5cec3;
+  .osora-feature-list {
+    border-top: 1px solid #dfd8cc;
     border-left: 0;
-    padding: 2px 24px 34px;
+    padding: 4px 24px 36px;
   }
 
-  .atem-stone-card {
+  .osora-stone-card {
     grid-template-columns: 88px 1fr;
     place-items: center start;
-    border-top: 1px solid #d5cec3;
+    border-top: 1px solid #dfd8cc;
     border-left: 0;
     text-align: left;
   }
 
-  .atem-stone-card span {
+  .osora-stone-card span {
     grid-column: 2;
   }
 }
 
+/* ── Responsive: mobile ─────────────────────────────── */
+
 @media (max-width: 520px) {
-  .atem-nav__actions a:first-child {
+  .osora-nav__actions a:not(.osora-pill) {
     display: none;
   }
 
-  .atem-nav__actions {
-    display: none;
+  .osora-nav__actions {
+    display: flex;
   }
 
-  .atem-logo {
+  .osora-logo {
     font-size: 19px;
   }
 
-  .atem-hero__brand {
+  .osora-hero__brand {
     font-size: 46px;
   }
 
-  .atem-hero h1 {
+  .osora-hero h1 {
     font-size: 32px;
   }
 
-  .atem-hero__buttons {
+  .osora-hero__buttons {
     align-items: flex-start;
     flex-direction: column;
     gap: 16px;

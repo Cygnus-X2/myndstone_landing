@@ -35,11 +35,11 @@ export const translations = {
     },
     videoShowcase: {
       badge: "Sieh Osora in Aktion",
-      h2: "Hand aufs Herz, Stein auf Osora",
+      h2: "Leg den Stein auf. Atme. Spür den Unterschied.",
       description:
         "Ein kurzer Blick in das Ritual: Sobald der Stein aufgelegt wird, erwacht Osora. Sanftes Licht, wohltuende Klänge und eine fühlbare Wärme holen dich aus dem Kopf in den Körper.",
       chips: ["Greifbare Aktivierung", "Sanftes Ambient-Licht", "Geführte Atemsequenzen"],
-      caption: "Osora Demo · 10 Sekunden",
+      caption: "Osora · 10 Sekunden",
     },
     howItWorks: {
       h2: "Wie Osora dich begleitet",
@@ -127,21 +127,21 @@ export const translations = {
       items: [
         {
           quote:
-            "Mein Workday ist vollgepackt. Fünf Minuten mit dem Osora ersetzen für mich das doomscrolling vor Meetings.",
+            "Mein Workday ist vollgepackt. Fünf Minuten mit Osora ersetzen für mich das Doomscrolling vor Meetings.",
           author: "Lea G.",
           role: "Product Lead & Breathwork-Fan",
           rating: 5,
         },
         {
           quote:
-            "Ich tracke fast alles – Schlaf, HRV, Fokus. Der Osora ist das einzige Tool, das mich bewusst offline bringt.",
+            "Ich tracke fast alles – Schlaf, HRV, Fokus. Osora ist das einzige Tool, das mich bewusst offline bringt.",
           author: "Armin T.",
           role: "Biohacking-Community Moderator",
           rating: 5,
         },
         {
           quote:
-            "Unsere Remote-Crew nutzt den Osora für Lunchbreak Sessions. Danach fühlt sich der Nachmittag leichter an.",
+            "Unsere Remote-Crew nutzt Osora für Lunchbreak-Sessions. Danach fühlt sich der Nachmittag leichter an.",
           author: "Nora B.",
           role: "People & Wellbeing bei einem Tech-Startup",
           rating: 5,
@@ -153,7 +153,7 @@ export const translations = {
     cta: {
       h2: "Bereit für ablenkungsfreie Meditation?",
       description:
-        "Lass dich benachrichtigen, sobald der Osora verfügbar ist. Early Adopter erhalten exklusive Updates und Frühzugang.",
+        "Lass dich benachrichtigen, sobald Osora verfügbar ist. Early Adopter erhalten exklusive Updates und Frühzugang.",
       formTitle: "Jetzt vormerken",
       placeholder: "deine@email.de",
       submit: "Benachrichtigen",
@@ -161,12 +161,12 @@ export const translations = {
         "Wir respektieren deine Privatsphäre. Keine Weitergabe an Dritte. Abmeldung jederzeit möglich.",
       benefits: [
         { icon: "✨", title: "Early Bird Bonus", description: "Erste 100 Vormerkungen erhalten einen Rabatt" },
-        { icon: "🎯", title: "Beta-Zugang", description: "Teste den Osora vor dem offiziellen Launch" },
+        { icon: "🎯", title: "Beta-Zugang", description: "Teste Osora vor dem offiziellen Launch" },
         { icon: "💎", title: "Exklusive Updates", description: "Erfahre als Erste*r von neuen Features" },
       ],
       successTitle: "Vielen Dank!",
       successDesc:
-        "Du stehst jetzt auf der Warteliste für den Osora. Als Early Adopter erhältst du:",
+        "Du stehst jetzt auf der Warteliste für Osora. Als Early Adopter erhältst du:",
       perks: [
         "Frühzeitigen Zugang zum Launch",
         "Exklusive Updates zur Entwicklung",
@@ -234,11 +234,11 @@ export const translations = {
     },
     videoShowcase: {
       badge: "See Osora in Action",
-      h2: "Heart in Hand, Stone on Osora",
+      h2: "Place the stone. Take a breath. Feel it.",
       description:
         "A quick glimpse into the ritual: as soon as the stone is placed, Osora awakens. Gentle light, soothing sounds, and tangible warmth draw you out of your head and into your body.",
       chips: ["Tactile Activation", "Soft Ambient Light", "Guided Breathing Sequences"],
-      caption: "Osora Demo · 10 Seconds",
+      caption: "Osora · 10 Seconds",
     },
     howItWorks: {
       h2: "How Osora Guides You",
