@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <Reveal className="space-y-4">
-              <h3 className="text-2xl font-bold">Mindstone</h3>
+              <h3 className="text-2xl font-bold">Osora</h3>
               <p className="text-white/80 text-sm leading-relaxed">{f.tagline}</p>
             </Reveal>
 
@@ -46,7 +46,7 @@ const Footer = () => {
                 <a href="#" className="w-10 h-10 bg-white/10 rounded-zen flex items-center justify-center hover:bg-white/20 transition-soft" aria-label="Twitter">
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a href="mailto:hello@mindstone.com" className="w-10 h-10 bg-white/10 rounded-zen flex items-center justify-center hover:bg-white/20 transition-soft" aria-label="E-Mail">
+                <a href="mailto:hello@osora.com" className="w-10 h-10 bg-white/10 rounded-zen flex items-center justify-center hover:bg-white/20 transition-soft" aria-label="E-Mail">
                   <Mail className="w-4 h-4" />
                 </a>
               </div>

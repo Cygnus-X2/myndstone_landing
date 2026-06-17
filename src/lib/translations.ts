@@ -6,7 +6,7 @@ export const translations = {
       badge: "Ein Stein. Ein Ritual. Ganz bei dir.",
       h1line2: "Meditation zum Anfassen",
       description:
-        "Lege den Stein in deine Hand, spüre die Haptik und folge der Stimme. Mindstone führt dich ohne Bildschirm, ohne Ablenkung – nur du, dein Atem und ein warmes, greifbares Objekt.",
+        "Lege den Stein in deine Hand, spüre die Haptik und folge der Stimme. Osora führt dich ohne Bildschirm, ohne Ablenkung – nur du, dein Atem und ein warmes, greifbares Objekt.",
       cta1: "Jetzt vormerken",
       cta2: "Mehr erfahren",
       features: "✨ Sanftes Licht • 🌿 Achtsame Audio-Guides • 🪨 Natürliche Haptik",
@@ -14,7 +14,7 @@ export const translations = {
     valueProposition: {
       h2: "Ein Ritual, das du spüren kannst",
       description:
-        "Mindstone bringt Meditation aus dem Bildschirm zurück in die Hand. Die haptische Oberfläche, das sanfte Licht und die Stimme im Raum schaffen ein Gefühl von Ruhe, ohne dass du nach deinem Handy greifen musst.",
+        "Osora bringt Meditation aus dem Bildschirm zurück in die Hand. Die haptische Oberfläche, das sanfte Licht und die Stimme im Raum schaffen ein Gefühl von Ruhe, ohne dass du nach deinem Handy greifen musst.",
       cards: [
         {
           title: "Greifbare Präsenz",
@@ -34,23 +34,23 @@ export const translations = {
       ],
     },
     videoShowcase: {
-      badge: "Sieh Mindstone in Aktion",
-      h2: "Hand aufs Herz, Stein auf Mindstone",
+      badge: "Sieh Osora in Aktion",
+      h2: "Hand aufs Herz, Stein auf Osora",
       description:
-        "Ein kurzer Blick in das Ritual: Sobald der Stein aufgelegt wird, erwacht Mindstone. Sanftes Licht, wohltuende Klänge und eine fühlbare Wärme holen dich aus dem Kopf in den Körper.",
+        "Ein kurzer Blick in das Ritual: Sobald der Stein aufgelegt wird, erwacht Osora. Sanftes Licht, wohltuende Klänge und eine fühlbare Wärme holen dich aus dem Kopf in den Körper.",
       chips: ["Greifbare Aktivierung", "Sanftes Ambient-Licht", "Geführte Atemsequenzen"],
-      caption: "Mindstone Demo · 10 Sekunden",
+      caption: "Osora Demo · 10 Sekunden",
     },
     howItWorks: {
-      h2: "Wie Mindstone dich begleitet",
+      h2: "Wie Osora dich begleitet",
       description:
-        "Jeder Stein steht für eine Stimmung. Mindstone erkennt ihn, reagiert mit Licht, Temperatur und Audio und schafft so eine geführte Meditation, die du mit allen Sinnen erlebst.",
+        "Jeder Stein steht für eine Stimmung. Osora erkennt ihn, reagiert mit Licht, Temperatur und Audio und schafft so eine geführte Meditation, die du mit allen Sinnen erlebst.",
       stories: [
         {
           stone: "Jade Stein",
           title: "Morgenenergie",
           description:
-            "Lege den Jade Stein auf, spüre das sanfte Pulsieren des Mindstone und starte mit einer belebenden Atemübung.",
+            "Lege den Jade Stein auf, spüre das sanfte Pulsieren des Osora und starte mit einer belebenden Atemübung.",
           time: "10 Minuten",
           mood: "Aufladend",
         },
@@ -80,12 +80,12 @@ export const translations = {
         },
       ],
       banner:
-        "Achtsamkeit, die du berührst: Mindstone verbindet Klang, Licht und Haptik zu einem analogen Ritual.",
+        "Achtsamkeit, die du berührst: Osora verbindet Klang, Licht und Haptik zu einem analogen Ritual.",
       labelDuration: "Dauer:",
       labelMood: "Stimmung:",
     },
     features: {
-      h2: "Was dich mit Mindstone erwartet",
+      h2: "Was dich mit Osora erwartet",
       description:
         "Jede Session ist ein bewusstes Erlebnis – spürbar, hörbar und ganz ohne digitale Ablenkung.",
       items: [
@@ -107,12 +107,12 @@ export const translations = {
         {
           title: "Einfache Gesten",
           description:
-            "Einlegen, aufstellen, atmen – mehr Bedienung braucht es nicht. Mindstone reagiert intuitiv auf dich.",
+            "Einlegen, aufstellen, atmen – mehr Bedienung braucht es nicht. Osora reagiert intuitiv auf dich.",
         },
         {
           title: "Ritual für jeden Tag",
           description:
-            "Kurze Pausen oder längere Sessions – Mindstone hilft dir, achtsame Routinen aufzubauen.",
+            "Kurze Pausen oder längere Sessions – Osora hilft dir, achtsame Routinen aufzubauen.",
         },
         {
           title: "Flexibler Rhythmus",
@@ -127,21 +127,21 @@ export const translations = {
       items: [
         {
           quote:
-            "Mein Workday ist vollgepackt. Fünf Minuten mit dem Mindstone ersetzen für mich das doomscrolling vor Meetings.",
+            "Mein Workday ist vollgepackt. Fünf Minuten mit dem Osora ersetzen für mich das doomscrolling vor Meetings.",
           author: "Lea G.",
           role: "Product Lead & Breathwork-Fan",
           rating: 5,
         },
         {
           quote:
-            "Ich tracke fast alles – Schlaf, HRV, Fokus. Der Mindstone ist das einzige Tool, das mich bewusst offline bringt.",
+            "Ich tracke fast alles – Schlaf, HRV, Fokus. Der Osora ist das einzige Tool, das mich bewusst offline bringt.",
           author: "Armin T.",
           role: "Biohacking-Community Moderator",
           rating: 5,
         },
         {
           quote:
-            "Unsere Remote-Crew nutzt den Mindstone für Lunchbreak Sessions. Danach fühlt sich der Nachmittag leichter an.",
+            "Unsere Remote-Crew nutzt den Osora für Lunchbreak Sessions. Danach fühlt sich der Nachmittag leichter an.",
           author: "Nora B.",
           role: "People & Wellbeing bei einem Tech-Startup",
           rating: 5,
@@ -153,7 +153,7 @@ export const translations = {
     cta: {
       h2: "Bereit für ablenkungsfreie Meditation?",
       description:
-        "Lass dich benachrichtigen, sobald der Mindstone verfügbar ist. Early Adopter erhalten exklusive Updates und Frühzugang.",
+        "Lass dich benachrichtigen, sobald der Osora verfügbar ist. Early Adopter erhalten exklusive Updates und Frühzugang.",
       formTitle: "Jetzt vormerken",
       placeholder: "deine@email.de",
       submit: "Benachrichtigen",
@@ -161,12 +161,12 @@ export const translations = {
         "Wir respektieren deine Privatsphäre. Keine Weitergabe an Dritte. Abmeldung jederzeit möglich.",
       benefits: [
         { icon: "✨", title: "Early Bird Bonus", description: "Erste 100 Vormerkungen erhalten einen Rabatt" },
-        { icon: "🎯", title: "Beta-Zugang", description: "Teste den Mindstone vor dem offiziellen Launch" },
+        { icon: "🎯", title: "Beta-Zugang", description: "Teste den Osora vor dem offiziellen Launch" },
         { icon: "💎", title: "Exklusive Updates", description: "Erfahre als Erste*r von neuen Features" },
       ],
       successTitle: "Vielen Dank!",
       successDesc:
-        "Du stehst jetzt auf der Warteliste für den Mindstone. Als Early Adopter erhältst du:",
+        "Du stehst jetzt auf der Warteliste für den Osora. Als Early Adopter erhältst du:",
       perks: [
         "Frühzeitigen Zugang zum Launch",
         "Exklusive Updates zur Entwicklung",
@@ -196,7 +196,7 @@ export const translations = {
       privacy: "Datenschutz",
       terms: "AGB",
       imprint: "Impressum",
-      copyright: "© 2024 Mindstone. Alle Rechte vorbehalten. • Ein Produkt für bewusste Meditation.",
+      copyright: "© 2024 Osora. Alle Rechte vorbehalten. • Ein Produkt für bewusste Meditation.",
     },
   },
 
@@ -205,7 +205,7 @@ export const translations = {
       badge: "One Stone. One Ritual. Just for you.",
       h1line2: "Meditation You Can Feel",
       description:
-        "Place the stone in your hand, feel the texture, and follow the voice. Mindstone guides you without a screen, without distraction – just you, your breath, and a warm, tangible object.",
+        "Place the stone in your hand, feel the texture, and follow the voice. Osora guides you without a screen, without distraction – just you, your breath, and a warm, tangible object.",
       cta1: "Join Waitlist",
       cta2: "Learn More",
       features: "✨ Gentle Light • 🌿 Mindful Audio Guides • 🪨 Natural Texture",
@@ -213,7 +213,7 @@ export const translations = {
     valueProposition: {
       h2: "A Ritual You Can Feel",
       description:
-        "Mindstone brings meditation out of the screen and back into your hands. The tactile surface, gentle light, and ambient voice create a sense of calm – no need to reach for your phone.",
+        "Osora brings meditation out of the screen and back into your hands. The tactile surface, gentle light, and ambient voice create a sense of calm – no need to reach for your phone.",
       cards: [
         {
           title: "Tangible Presence",
@@ -233,23 +233,23 @@ export const translations = {
       ],
     },
     videoShowcase: {
-      badge: "See Mindstone in Action",
-      h2: "Heart in Hand, Stone on Mindstone",
+      badge: "See Osora in Action",
+      h2: "Heart in Hand, Stone on Osora",
       description:
-        "A quick glimpse into the ritual: as soon as the stone is placed, Mindstone awakens. Gentle light, soothing sounds, and tangible warmth draw you out of your head and into your body.",
+        "A quick glimpse into the ritual: as soon as the stone is placed, Osora awakens. Gentle light, soothing sounds, and tangible warmth draw you out of your head and into your body.",
       chips: ["Tactile Activation", "Soft Ambient Light", "Guided Breathing Sequences"],
-      caption: "Mindstone Demo · 10 Seconds",
+      caption: "Osora Demo · 10 Seconds",
     },
     howItWorks: {
-      h2: "How Mindstone Guides You",
+      h2: "How Osora Guides You",
       description:
-        "Each stone represents a mood. Mindstone recognises it and responds with light, temperature, and audio – creating a guided meditation you experience with all your senses.",
+        "Each stone represents a mood. Osora recognises it and responds with light, temperature, and audio – creating a guided meditation you experience with all your senses.",
       stories: [
         {
           stone: "Jade Stone",
           title: "Morning Energy",
           description:
-            "Place the jade stone, feel the gentle pulse of Mindstone, and start with an energising breathing exercise.",
+            "Place the jade stone, feel the gentle pulse of Osora, and start with an energising breathing exercise.",
           time: "10 Minutes",
           mood: "Energising",
         },
@@ -279,12 +279,12 @@ export const translations = {
         },
       ],
       banner:
-        "Mindfulness you can touch: Mindstone weaves sound, light, and texture into one analog ritual.",
+        "Mindfulness you can touch: Osora weaves sound, light, and texture into one analog ritual.",
       labelDuration: "Duration:",
       labelMood: "Mood:",
     },
     features: {
-      h2: "What to Expect with Mindstone",
+      h2: "What to Expect with Osora",
       description:
         "Every session is a conscious experience – felt, heard, and entirely free of digital distraction.",
       items: [
@@ -306,12 +306,12 @@ export const translations = {
         {
           title: "Simple Gestures",
           description:
-            "Place, position, breathe – that's all it takes. Mindstone responds intuitively to you.",
+            "Place, position, breathe – that's all it takes. Osora responds intuitively to you.",
         },
         {
           title: "A Daily Ritual",
           description:
-            "Short breaks or longer sessions – Mindstone helps you build mindful routines.",
+            "Short breaks or longer sessions – Osora helps you build mindful routines.",
         },
         {
           title: "Flexible Rhythm",
@@ -326,21 +326,21 @@ export const translations = {
       items: [
         {
           quote:
-            "My workday is packed. Five minutes with Mindstone replace the doomscrolling I used to do before meetings.",
+            "My workday is packed. Five minutes with Osora replace the doomscrolling I used to do before meetings.",
           author: "Lea G.",
           role: "Product Lead & Breathwork Enthusiast",
           rating: 5,
         },
         {
           quote:
-            "I track almost everything – sleep, HRV, focus. Mindstone is the only tool that intentionally takes me offline.",
+            "I track almost everything – sleep, HRV, focus. Osora is the only tool that intentionally takes me offline.",
           author: "Armin T.",
           role: "Biohacking Community Moderator",
           rating: 5,
         },
         {
           quote:
-            "Our remote crew uses Mindstone for lunchbreak sessions. The afternoon just feels lighter after.",
+            "Our remote crew uses Osora for lunchbreak sessions. The afternoon just feels lighter after.",
           author: "Nora B.",
           role: "People & Wellbeing at a Tech Startup",
           rating: 5,
@@ -352,7 +352,7 @@ export const translations = {
     cta: {
       h2: "Ready for Distraction-Free Meditation?",
       description:
-        "Get notified as soon as Mindstone is available. Early adopters receive exclusive updates and early access.",
+        "Get notified as soon as Osora is available. Early adopters receive exclusive updates and early access.",
       formTitle: "Join the Waitlist",
       placeholder: "your@email.com",
       submit: "Notify Me",
@@ -360,12 +360,12 @@ export const translations = {
         "We respect your privacy. No sharing with third parties. Unsubscribe anytime.",
       benefits: [
         { icon: "✨", title: "Early Bird Bonus", description: "First 100 sign-ups receive a discount" },
-        { icon: "🎯", title: "Beta Access", description: "Try Mindstone before the official launch" },
+        { icon: "🎯", title: "Beta Access", description: "Try Osora before the official launch" },
         { icon: "💎", title: "Exclusive Updates", description: "Be the first to hear about new features" },
       ],
       successTitle: "Thank you!",
       successDesc:
-        "You're now on the waitlist for Mindstone. As an early adopter you'll receive:",
+        "You're now on the waitlist for Osora. As an early adopter you'll receive:",
       perks: [
         "Early access to the launch",
         "Exclusive development updates",
@@ -395,7 +395,7 @@ export const translations = {
       privacy: "Privacy",
       terms: "Terms",
       imprint: "Imprint",
-      copyright: "© 2024 Mindstone. All rights reserved. • A product for conscious meditation.",
+      copyright: "© 2024 Osora. All rights reserved. • A product for conscious meditation.",
     },
   },
 } as const;

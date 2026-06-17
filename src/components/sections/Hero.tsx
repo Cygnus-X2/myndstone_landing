@@ -1,4 +1,4 @@
-import heroImage from "@/assets/mindstone-hero.jpg";
+import heroImage from "@/assets/osora-hero.jpg";
 import Reveal from "@/components/ui/reveal";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -26,7 +26,7 @@ const Hero = () => {
                 {h.badge}
               </span>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-zen-earth">Mindstone</span>
+                <span className="text-zen-earth">Osora</span>
                 <br />
                 <span className="bg-gradient-stone bg-clip-text text-transparent">
                   {h.h1line2}
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="relative z-10 rounded-stone overflow-hidden shadow-deep">
               <img
                 src={heroImage}
-                alt="Mindstone Meditationsgerät auf einem Holztisch in natürlichem Licht"
+                alt="Osora Meditationsgerät auf einem Holztisch in natürlichem Licht"
                 className="w-full h-auto object-cover float-gentle"
               />
             </div>

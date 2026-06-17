@@ -15,7 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Mindstone specific variants
+        // Osora specific variants
         zen: "bg-gradient-stone text-primary-foreground hover:opacity-90 shadow-zen rounded-zen",
         stone: "bg-zen-primary text-primary-foreground hover:bg-zen-earth shadow-soft rounded-stone",
         sage: "bg-zen-sage text-zen-earth hover:bg-zen-sage/80 shadow-soft rounded-zen",

@@ -16,7 +16,7 @@ const SimpleProcess = () => {
                 Stein auflegen
               </h3>
               <p className="text-muted-foreground">
-                Wähle intuitiv einen Edelstein, lege ihn auf und spüre, wie Mindstone sanft aktiviert.
+                Wähle intuitiv einen Edelstein, lege ihn auf und spüre, wie Osora sanft aktiviert.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ const SimpleProcess = () => {
 
           <div className="bg-gradient-earth rounded-stone p-8 text-center shadow-soft">
             <p className="text-xl text-zen-earth leading-relaxed">
-              Mindstone macht Meditation greifbar. Ein physisches Objekt lenkt deinen Fokus, 
+              Osora macht Meditation greifbar. Ein physisches Objekt lenkt deinen Fokus,
               während Audio und Licht deine Reise begleiten – ganz ohne digitale Reize.
             </p>
           </div>
