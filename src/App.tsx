@@ -56,8 +56,8 @@ const App = () => {
           <img src={productScene} alt="" className="atem-hero__image" />
           <div className="atem-hero__shade" />
           <header className="atem-nav" aria-label="Primary navigation">
-            <a href="#" className="atem-logo" aria-label="ATEM home">
-              ATEM
+            <a href="#" className="atem-logo" aria-label="Osora home">
+              Osora
             </a>
             <nav className="atem-nav__links">
               <a href="#product">Product</a>
@@ -75,7 +75,7 @@ const App = () => {
           </header>
 
           <div className="atem-hero__content">
-            <p className="atem-hero__brand">ATEM</p>
+            <p className="atem-hero__brand">Osora</p>
             <h1>Return to yourself.</h1>
             <p className="atem-hero__copy">
               A physical ritual for presence, reflection and calm.
@@ -95,7 +95,7 @@ const App = () => {
 
         <section className="atem-split atem-split--intro" id="product">
           <figure className="atem-photo atem-photo--hand">
-            <img src={handScene} alt="A hand placing a ritual stone on the ATEM base" />
+            <img src={handScene} alt="A hand placing a ritual stone on the Osora base" />
           </figure>
           <div className="atem-copy-panel">
             <h2>
@@ -104,7 +104,7 @@ const App = () => {
               should disappear.
             </h2>
             <p>
-              ATEM isn't another app.
+              Osora isn't another app.
               <br />
               No notifications.
               <br />
@@ -133,7 +133,7 @@ const App = () => {
           ))}
         </section>
 
-        <section className="atem-gallery" aria-label="ATEM product views">
+        <section className="atem-gallery" aria-label="Osora product views">
           <figure>
             <div className="atem-stone-set" aria-hidden="true">
               <i className="stone-sample stone-obsidian" />
@@ -143,10 +143,10 @@ const App = () => {
             </div>
           </figure>
           <figure>
-            <img src={productScene} alt="ATEM base with the personal stone" />
+            <img src={productScene} alt="Osora base with the personal stone" />
           </figure>
           <figure>
-            <div className="atem-phone" aria-label="ATEM session screen mockup">
+            <div className="atem-phone" aria-label="Osora session screen mockup">
               <div className="atem-phone__ring" />
               <span>Center</span>
             </div>
@@ -155,7 +155,7 @@ const App = () => {
 
         <section className="atem-split atem-split--truth" id="about">
           <figure className="atem-photo atem-photo--wide">
-            <img src={lightStoneScene} alt="ATEM on a quiet table beside a cup" />
+            <img src={lightStoneScene} alt="Osora on a quiet table beside a cup" />
           </figure>
           <div className="atem-copy-panel atem-copy-panel--truth">
             <h2>
@@ -169,7 +169,7 @@ const App = () => {
               body and mind.
             </p>
             <p>
-              ATEM turns this timeless practice
+              Osora turns this timeless practice
               <br />
               into a physical daily ritual.
             </p>
@@ -180,7 +180,7 @@ const App = () => {
           <div className="atem-device__text">
             <h2>More than a device.</h2>
             <p>
-              ATEM combines physical objects,
+              Osora combines physical objects,
               <br />
               adaptive guidance, sound and light
               <br />
@@ -196,7 +196,7 @@ const App = () => {
             ))}
           </ul>
           <figure className="atem-device__image">
-            <img src={productScene} alt="Close view of ATEM stone and base" />
+            <img src={productScene} alt="Close view of Osora stone and base" />
           </figure>
         </section>
 
@@ -218,7 +218,7 @@ const App = () => {
           <img src={productScene} alt="" />
           <div>
             <h2>Come home to yourself.</h2>
-            <p>ATEM</p>
+            <p>Osora</p>
           </div>
         </section>
       </div>
